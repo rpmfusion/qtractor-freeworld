@@ -10,7 +10,7 @@
 
 Summary:       Audio/MIDI multi-track sequencer
 Name:          qtractor-freeworld
-Version:       0.5.6
+Version:       0.5.7
 Release:       1%{?dist}
 License:       GPLv2+
 Group:         Applications/Multimedia
@@ -77,6 +77,9 @@ install -m 755 libqtractor_mad.so %{buildroot}%{_libdir}/qtractor
 %{_libdir}/qtractor
 
 %changelog
+* Wed Jan 09 2013 Brendan Jones <brendan.jones.it@gmail.com> 0.5.7-1
+- Rebuild for qtractor 0.5.7
+
 * Sat Oct 06 2012 Brendan Jones <brendan.jones.it@gmail.com> 0.5.6-1
 - Rebuild for qtractor 0.5.6
 
