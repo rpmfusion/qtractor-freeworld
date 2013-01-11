@@ -10,8 +10,8 @@
 
 Summary:       Audio/MIDI multi-track sequencer
 Name:          qtractor-freeworld
-Version:       0.5.5
-Release:       3%{?dist}
+Version:       0.5.7
+Release:       1%{?dist}
 License:       GPLv2+
 Group:         Applications/Multimedia
 URL:           http://qtractor.sourceforge.net/
@@ -26,7 +26,7 @@ BuildRequires: qt-devel
 BuildRequires: autoconf
 BuildRequires: automake
 
-Requires:      qtractor%{?_isa} = %{version}
+Requires:      qtractor%{?_isa} >= %{version}
 Obsoletes:     qtractor < 0.5.5
 
 %description
@@ -77,6 +77,15 @@ install -m 755 libqtractor_mad.so %{buildroot}%{_libdir}/qtractor
 %{_libdir}/qtractor
 
 %changelog
+* Wed Jan 09 2013 Brendan Jones <brendan.jones.it@gmail.com> 0.5.7-1
+- Rebuild for qtractor 0.5.7
+
+* Sat Oct 06 2012 Brendan Jones <brendan.jones.it@gmail.com> 0.5.6-1
+- Rebuild for qtractor 0.5.6
+
+* Fri Sep 14 2012 Brendan Jones <brendan.jones.it@gmail.com> 0.5.5-4
+- Correct Requires.
+
 * Wed Aug 15 2012 Brendan Jones <brendan.jones.it@gmail.com> 0.5.5-2
 - Correct directory ownership
 
