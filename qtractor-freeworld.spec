@@ -11,7 +11,7 @@
 Summary:       Audio/MIDI multi-track sequencer
 Name:          qtractor-freeworld
 Version:       0.5.7
-Release:       1%{?dist}
+Release:       2%{?dist}
 License:       GPLv2+
 Group:         Applications/Multimedia
 URL:           http://qtractor.sourceforge.net/
@@ -77,6 +77,9 @@ install -m 755 libqtractor_mad.so %{buildroot}%{_libdir}/qtractor
 %{_libdir}/qtractor
 
 %changelog
+* Sun Aug 31 2014 Sérgio Basto <sergio@serjux.com> - 0.5.7-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
+
 * Wed Jan 09 2013 Brendan Jones <brendan.jones.it@gmail.com> 0.5.7-1
 - Rebuild for qtractor 0.5.7
 
